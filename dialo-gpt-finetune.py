@@ -14,9 +14,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, Dataset, RandomSampler, SequentialSampler
 from torch.utils.data.distributed import DistributedSampler
 from tqdm.notebook import tqdm, trange
-from pathlib import Path
 from collections import Counter
-from statistics import mean, median, stdev
 
 from transformers import (
     MODEL_WITH_LM_HEAD_MAPPING,
