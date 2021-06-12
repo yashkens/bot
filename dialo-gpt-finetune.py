@@ -535,7 +535,8 @@ def main(df_trn, df_val):
 
 
 # df = pd.read_csv('got_lotr_witcher.csv', index_col='Unnamed: 0')
-df = pd.read_csv('whole_fiction_dataset.zip', index_col='Unnamed: 0')
+# df = pd.read_csv('whole_fiction_dataset.zip', index_col='Unnamed: 0')
+df = pd.read_csv('whole_fiction_dataset_sentiment.zip', index_col='Unnamed: 0')
 df = df.fillna('')
 trn_df, val_df = train_test_split(df, test_size=0.2)
 
